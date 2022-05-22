@@ -1,0 +1,105 @@
+// dark theme
+$primary-color: #7C7287;
+$secondary-color: #C0E0DE;
+$tertiary-color: #6C698D;
+$quaternary-color: #BAFFDF;
+// $quinary-color: #C1FFF2;
+// light theme
+// $primary-color: #7C7287;
+// $secondary-color: #9DC0BC;
+// $tertiary-color: #B2EDC5;
+// $quaternary-color: #BAFFDF;
+// $quinary-color: #C1FFF2;
+
+.home-page {
+    .text-zone {
+        position: absolute;
+        left: 10%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40%;
+        max-height: 90%;
+    }
+
+    h1 {
+        color: $secondary-color;
+        font-size: 56px;
+        line-height: 53px;
+        margin: 0;
+        font-family: 'Coolvetica';
+        font-weight: 400;
+
+        &:before {
+            content: '<h1>';
+            font-family: 'La Belle Aurore', cursive;
+            color: $secondary-color;
+            font-size: 18px;
+            position: absolute;
+            margin-top: -40px;
+            left: -15px;
+            opacity: 0.6;
+        }
+
+        &:after {
+            content: '<h1/>';
+            font-family: 'La Belle Aurore', cursive;
+            color: $secondary-color;
+            font-size: 18px;
+            position: absolute;
+            margin-top: 18px;
+            margin-left: 20px;
+            animation: fadeIn 1s 1.7s backwards;
+            opacity: 0.6;
+        }
+
+        img {
+            margin-left: 20px;
+            opacity: 0;
+            width: 32px;
+            height: auto;
+            animation: rotateIn 1s linear both;
+            animation-delay: 1.4s;
+        }
+    }
+
+    h2 {
+        color: $secondary-color;
+        margin-top: 20px;
+        font-weight: 800;
+        font-size: 14px;
+        font-family: sans-serif;
+        letter-spacing: 3px;
+        animation: fadeIn 1s 1.8s backwards;
+    }
+
+    .flat-button {
+        color: black;
+        background-color: $secondary-color;
+        font-size: 14px;
+        font-weight: 800;
+        letter-spacing: 4px;
+        font-family: sans-serif;
+        text-decoration: none;
+        padding: 10px 18px;
+        border: 1px solid black;
+        margin-top: 25px;
+        float: left;
+        animation: fadeInAnimation 1s 1.8s backwards;
+        white-space: nowrap;
+
+        &:hover {
+            background: $quaternary-color;
+            color: #333;
+        }
+    }
+}
+
+.self-portrait {
+    position: relative;
+    background: transparent;
+    right: -58%;
+    top: 10%;
+    width: 375px;
+    height: 505px;
+    animation: fadeIn 4s;
+}
