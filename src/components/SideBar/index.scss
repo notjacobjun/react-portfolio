@@ -1,8 +1,4 @@
-$primary-color: #7C7287;
-$secondary-color: #9DC0BC;
-$tertiary-color: #B2EDC5;
-$quaternary-color: #BAFFDF;
-$quinary-color: #C1FFF2;
+@use "../../variables";
 
 .nav-bar {
     background: #181818;
@@ -52,7 +48,7 @@ $quinary-color: #C1FFF2;
             }
 
             &:hover {
-                color: $quaternary-color;
+                color: variables.$quaternary-color;
 
                 svg {
                     opacity: 0;
@@ -98,7 +94,7 @@ $quinary-color: #C1FFF2;
 
         a.active {
             svg {
-                color: $quaternary-color;
+                color: variables.$quaternary-color;
             }
         }
     }
@@ -122,7 +118,7 @@ $quinary-color: #C1FFF2;
                 color: #4d4d4e;
 
                 &:hover {
-                    color: $quinary-color;
+                    color: variables.$quinary-color;
                 }
             }
         }
@@ -130,5 +126,5 @@ $quinary-color: #C1FFF2;
 }
 
 #company-icon {
-    color: $quaternary-color;
+    color: variables.$quaternary-color;
 }

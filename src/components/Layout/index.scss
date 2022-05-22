@@ -1,8 +1,4 @@
-$primary-color: #7C7287;
-$secondary-color: #9DC0BC;
-$tertiary-color: #B2EDC5;
-$quaternary-color: #BAFFDF;
-$quinary-color: #C1FFF2;
+@use "../../variables";
 
 .page {
     width: 100%;
@@ -16,7 +12,7 @@ $quinary-color: #C1FFF2;
 }
 
 .tags {
-    color: $tertiary-color;
+    color: variables.$quaternary-color;
     opacity: 0.6;
     position: absolute;
     bottom: 0;
@@ -59,7 +55,7 @@ $quinary-color: #C1FFF2;
         h1 {
             font-size: 53px;
             font-family: 'Coolvetica';
-            color: $secondary-color;
+            color: variables.$quaternary-color;
             font-weight: 400;
             margin-top: 0;
             position: relative;
@@ -69,7 +65,7 @@ $quinary-color: #C1FFF2;
             &:before {
                 content: '<h1>';
                 font-family: 'La Belle Aurore', cursive;
-                color: $tertiary-color;
+                color: variables.$quaternary-color;
                 font-size: 18px;
                 position: absolute;
                 margin-top: -10px;
@@ -81,7 +77,7 @@ $quinary-color: #C1FFF2;
             &:after {
                 content: '<h1/>';
                 font-family: 'La Belle Aurore', cursive;
-                color: $tertiary-color;
+                color: variables.$quaternary-color;
                 font-size: 18px;
                 line-height: 18px;
                 position: absolute;
@@ -94,7 +90,7 @@ $quinary-color: #C1FFF2;
 
         p {
             font-size: 13px;
-            color: $tertiary-color;
+            color: variables.$quaternary-color;
             font-family: sans-serif;
             font-weight: 300;
             max-width: fit-content;
@@ -116,7 +112,7 @@ $quinary-color: #C1FFF2;
 
     .text-animate-hover {
         &:hover {
-            color: $quinary-color;
+            color: variables.$quinary-color;
         }
     }
 }

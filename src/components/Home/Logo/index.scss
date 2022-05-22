@@ -1,8 +1,4 @@
-$primary-color: #7C7287;
-$secondary-color: #9DC0BC;
-$tertiary-color: #B2EDC5;
-$quaternary-color: #BAFFDF;
-$quinary-color: #C1FFF2;
+@use "../../../variables";
 
 .logo-container {
     z-index: 0;
@@ -38,6 +34,6 @@ $quinary-color: #C1FFF2;
 }
 
 .svg-container {
-    stroke: $quaternary-color;
+    stroke: variables.$quaternary-color;
     stroke-width: 10;
 }

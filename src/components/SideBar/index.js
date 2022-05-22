@@ -7,7 +7,7 @@ import {
   faGithub,
 } from '@fortawesome/free-brands-svg-icons'
 import { faHome, faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const Sidebar = () => {
   return (
@@ -18,6 +18,8 @@ const Sidebar = () => {
       {/* TODO replace this subtitle logo with personalized logo */}
       {/* <img className="sub-logo" src={LogoSubtitle} alt="jacob" />
       {/* </Link> */}
+      <div className="theme-toggle-container">
+      </div>
       <nav>
         <NavLink exact="true" activeclassname="active" to="/">
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />

@@ -1,8 +1,4 @@
-$primary-color: #7C7287;
-$secondary-color: #9DC0BC;
-$tertiary-color: #B2EDC5;
-$quaternary-color: #BAFFDF;
-$quinary-color: #C1FFF2;
+@use "../../variables";
 
 .text-animate {
     display: inline-block;
@@ -21,7 +17,7 @@ $quinary-color: #C1FFF2;
 
     &:hover {
         animation: rubberBand 1s;
-        color: $quaternary-color;
+        color: variables.$tertiary-color;
     }
 }
 

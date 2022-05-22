@@ -1,11 +1,14 @@
 :root {
-    /* --primary-color: #7C7287; */
-    --primary-color: #023C40;
-    --secondary-color: #9DC0BC;
-    --tertiary-color: #B2EDC5;
-    --quaternary-color: #BAFFDF;
-    --quinary-color: #C1FFF2;
-    --pacman-color: white;
+    /* --primary-color: #FCF8EC;
+    --secondary-color: #D0E8F2;
+    --tertiary-color: #79A3B1;
+    --quaternary-color: #456268; */
+
+    /* dark theme */
+    --primary-color: #1B262C;
+    --secondary-color: #0F4C75;
+    --tertiary-color: #3282B8;
+    --quaternary-color: #BBE1FA;
 }
 
 html {
