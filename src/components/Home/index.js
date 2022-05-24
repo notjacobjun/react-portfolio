@@ -44,14 +44,14 @@ const Home = () => {
         <div className="text-zone">
           <h1>
             <span className={letterClass}>H</span>
-            <span className={`${letterClass} _12`}>i,</span>
+            <span className={`${letterClass} _2`}>i,</span>
             <br />
-            <span className={`${letterClass} _13`}>I</span>
-            <span className={`${letterClass} _14`}>'m</span>
+            <span className={`${letterClass} _3`}>I</span>
+            <span className={`${letterClass} _4`}>'m</span>
             <AnimatedLetters
               letterClass={letterClass}
               strArray={nameArray}
-              idx={15}
+              idx={5}
             />
             <br />
             <AnimatedLetters

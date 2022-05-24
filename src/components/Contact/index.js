@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
@@ -46,13 +45,13 @@ const Contact = () => {
             <AnimatedLetters
               letterClass={letterClass}
               strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}
-              idx={15}
+              idx={24}
             />
           </h1>
           <p>
-            I am interested in freelance opportunities - especially ambitious or
-            large projects. However, if you have other request or question,
-            don't hesitate to contact me using below form either.
+            I'm am interseted in working with other talented software developers to improve the world one line of code
+            at a time. More specifically, I am especially interested in Machine Learning and Mobile development opportunities, however if you have any other inquiries
+            then please feel free to send me a message!
           </p>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>

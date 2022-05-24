@@ -33,20 +33,19 @@ const About = () => {
             />
           </h1>
           <p>
-            I'm very ambitious front-end developer looking for a role in
-            established IT company with the opportunity to work with the latest
-            technologies on challenging and diverse projects.
+            I'm an ambitious and motivated developer who is passionate about using my skills to create a positive
+            impact on the world. I have a strong background in software development with an interest towards Machine Learning
+            and Mobile development.
           </p>
           <p
             // @ts-ignore
             align="LEFT">
-            I'm quietly confident, naturally curious, and perpetually working on
-            improving my chops one design problem at a time.
+            Personally, I am a compassionate and brave person who is always curious about engineering and
+            problem solving.
           </p>
           <p>
-            If I need to define myself in one sentence that would be a family
-            person, father of a beautiful daughter, a sports fanatic,
-            photography enthusiast, and tech-obsessed!!!
+            My interests mainly include programming during my free time, however I also enjoy hiking, weight lifting, and
+            hanging out with my friends!
           </p>
         </div>
 
