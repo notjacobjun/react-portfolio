@@ -1,3 +1,5 @@
+@use "../../variables";
+
 .stage-cube-cont {
     width: 50%;
     height: 100%;
@@ -23,13 +25,13 @@
         width: 200px;
         height: 200px;
         border: 1px solid #ccc;
-        background: rgba(255, 255, 255, 0.4);
+        background: variables.$cube-background-color;
         text-align: center;
         font-size: 100px;
         display: flex;
         justify-content: center;
         align-items: center;
-        box-shadow: 0 0 20px 0px white;
+        box-shadow: 0 0 20px 0px variables.$quinary-color;
     }
 
     .face1 {
