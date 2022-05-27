@@ -16,6 +16,7 @@ const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
   useEffect(() => {
+    console.log(localStorage.getItem('theme'));
     setTimeout(() => {
       setLetterClass('text-animate-hover')
     }, 3000)

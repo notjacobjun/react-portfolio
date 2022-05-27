@@ -1,5 +1,3 @@
-@use "../../variables";
-
 .text-animate {
     display: inline-block;
     opacity: 0;
@@ -17,7 +15,7 @@
 
     &:hover {
         animation: rubberBand 1s;
-        color: variables.$tertiary-color;
+        color: var(--tertiary-color);
     }
 }
 

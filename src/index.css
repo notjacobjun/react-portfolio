@@ -3,12 +3,19 @@
     --secondary-color: #D0E8F2;
     --tertiary-color: #79A3B1;
     --quaternary-color: #456268;
+    --quinary-color: black;
+    --text-color: white;
+    --cube-background-color: #00000066;
+}
 
-    /* dark theme */
-    /* --primary-color: #1B262C;
+[data-theme='dark'] {
+    --primary-color: #1B262C;
     --secondary-color: #0F4C75;
     --tertiary-color: #3282B8;
-    --quaternary-color: #BBE1FA; */
+    --quaternary-color: #BBE1FA;
+    --quinary-color: white;
+    --text-color: black;
+    --cube-background-color: #ffffff66;
 }
 
 html {
@@ -17,11 +24,13 @@ html {
 
 body {
     margin: 0;
-    font: 300 11px/1.4 'Helvetica Neue', sans-serif;
-    color: var(--secondary-color);
+    font: 300 13px/1.4 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: var(--primary-color);
     overflow: hidden;
     display: block;
+}
+
+* {
+    transition: all .5s fade-in;
 }

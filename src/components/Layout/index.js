@@ -1,10 +1,15 @@
+import { useEffect } from 'react';
 import { Outlet } from 'react-router-dom'
+import useLocalStorage from 'use-local-storage';
 import Sidebar from '../SideBar/index.js'
 import './index.scss'
 
 const Layout = () => {
+  const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
+
   return (
-    <div className="App">
+    <div className="App" data-theme={theme}>
       <Sidebar />
       <div className="page">
         <span className="tags top-tags">&lt;body&gt;</span>

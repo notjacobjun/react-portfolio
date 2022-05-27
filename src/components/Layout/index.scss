@@ -1,9 +1,8 @@
-@use "../../variables";
-
 .page {
     width: 100%;
     height: 100%;
     position: absolute;
+    background-color: var(--primary-color);
 }
 
 .top-tags {
@@ -12,7 +11,7 @@
 }
 
 .tags {
-    color: variables.$quaternary-color;
+    color: var(--quaternary-color);
     opacity: 0.6;
     position: absolute;
     bottom: 0;
@@ -55,7 +54,7 @@
         h1 {
             font-size: 53px;
             font-family: 'Coolvetica';
-            color: variables.$quaternary-color;
+            color: var(--quaternary-color);
             font-weight: 400;
             margin-top: 0;
             position: relative;
@@ -65,7 +64,7 @@
             &:before {
                 content: '<h1>';
                 font-family: 'La Belle Aurore', cursive;
-                color: variables.$quaternary-color;
+                color: var(--quaternary-color);
                 font-size: 18px;
                 position: absolute;
                 margin-top: -10px;
@@ -77,7 +76,7 @@
             &:after {
                 content: '<h1/>';
                 font-family: 'La Belle Aurore', cursive;
-                color: variables.$quaternary-color;
+                color: var(--quaternary-color);
                 font-size: 18px;
                 line-height: 18px;
                 position: absolute;
@@ -89,8 +88,8 @@
         }
 
         p {
-            font-size: 13px;
-            color: variables.$quaternary-color;
+            font-size: 14px;
+            color: var(--quaternary-color);
             font-family: sans-serif;
             font-weight: 300;
             max-width: fit-content;
@@ -112,7 +111,7 @@
 
     .text-animate-hover {
         &:hover {
-            color: variables.$quinary-color;
+            color: var(--quinary-color);
         }
     }
 }

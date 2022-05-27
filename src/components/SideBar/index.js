@@ -1,6 +1,4 @@
 import './index.scss'
-import LogoS from '../../assets/images/logo-s.png'
-import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faLinkedin,
@@ -8,8 +6,17 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 import { faHome, faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { NavLink } from 'react-router-dom'
+import React from 'react'
+
 
 const Sidebar = () => {
+
+  const switchTheme = () => {
+    const newTheme = localStorage.getItem('theme') === JSON.stringify('light') ? JSON.stringify('dark') : JSON.stringify('light');
+    localStorage.setItem('theme', newTheme);
+    window.location.reload(); // Force reload the page to update the theme
+  }
+
   return (
     <div className="nav-bar">
       {/* <Link className="logo" to="/"> */}
@@ -18,8 +25,7 @@ const Sidebar = () => {
       {/* TODO replace this subtitle logo with personalized logo */}
       {/* <img className="sub-logo" src={LogoSubtitle} alt="jacob" />
       {/* </Link> */}
-      <div className="theme-toggle-container">
-      </div>
+      <button onClick={switchTheme}>Switch theme</button>
       <nav>
         <NavLink exact="true" activeclassname="active" to="/">
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
