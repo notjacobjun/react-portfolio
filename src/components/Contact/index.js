@@ -21,18 +21,19 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        'gmail',
-        'template_YeJhZkgb',
+        process.env.REACT_APP_SERVICE_KEY,
+        process.env.REACT_APP_TEMPLATE_KEY,
         form.current,
-        'your-token'
+        process.env.REACT_APP_PUBLIC_KEY
       )
       .then(
         () => {
           alert('Message successfully sent!')
           window.location.reload(false)
         },
-        () => {
+        (error) => {
           alert('Failed to send the message, please try again')
+          console.log(error.text)
         }
       )
   }
@@ -57,13 +58,13 @@ const Contact = () => {
             <form ref={form} onSubmit={sendEmail}>
               <ul>
                 <li className="half">
-                  <input placeholder="Name" type="text" name="name" required />
+                  <input placeholder="Name" type="text" name="user_name" required />
                 </li>
                 <li className="half">
                   <input
                     placeholder="Email"
                     type="email"
-                    name="email"
+                    name="user_email"
                     required
                   />
                 </li>
