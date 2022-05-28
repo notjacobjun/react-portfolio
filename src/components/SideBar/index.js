@@ -6,14 +6,17 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 import { faHome, faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { NavLink } from 'react-router-dom'
-import React from 'react'
+import React, { useState } from 'react'
 
 
 const Sidebar = () => {
 
+  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark');
+
   const switchTheme = () => {
     const newTheme = localStorage.getItem('theme') === JSON.stringify('light') ? JSON.stringify('dark') : JSON.stringify('light');
     localStorage.setItem('theme', newTheme);
+    setTheme(newTheme);
     window.location.reload(); // Force reload the page to update the theme
   }
 
@@ -25,7 +28,14 @@ const Sidebar = () => {
       {/* TODO replace this subtitle logo with personalized logo */}
       {/* <img className="sub-logo" src={LogoSubtitle} alt="jacob" />
       {/* </Link> */}
-      <button onClick={switchTheme}>Switch theme</button>
+      <div className='theme-toggle-container'>
+        <input checked={theme ? JSON.stringify('dark') === localStorage.getItem('theme') : false} onClick={switchTheme} type="checkbox" className="checkbox" id="checkbox" />
+        <label htmlFor="checkbox" className="label">
+          <i className="fas fa-moon"></i>
+          <i className='fas fa-sun'></i>
+          <div className='ball' />
+        </label>
+      </div>
       <nav>
         <NavLink exact="true" activeclassname="active" to="/">
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
