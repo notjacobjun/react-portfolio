@@ -50,7 +50,7 @@ const Home = () => {
             <AnimatedLetters
               letterClass={letterClass}
               strArray={nameArray}
-              idx={5}
+              idx={15}
             />
             <br />
             <AnimatedLetters

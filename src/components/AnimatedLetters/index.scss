@@ -12,6 +12,7 @@
     min-width: 10px;
     display: inline-block;
     animation-fill-mode: both;
+    z-index: 9;
 
     &:hover {
         animation: rubberBand 1s;
