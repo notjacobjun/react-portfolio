@@ -29,7 +29,7 @@ const Sidebar = () => {
       {/* <img className="sub-logo" src={LogoSubtitle} alt="jacob" />
       {/* </Link> */}
       <div className='theme-toggle-container'>
-        <input checked={theme ? JSON.stringify('dark') === localStorage.getItem('theme') : false} onClick={switchTheme} type="checkbox" className="checkbox" id="checkbox" />
+        <input checked={theme ? JSON.stringify('dark') === localStorage.getItem('theme') || theme === 'dark' : false} onClick={switchTheme} type="checkbox" className="checkbox" id="checkbox" />
         <label htmlFor="checkbox" className="label">
           <i className="fas fa-moon"></i>
           <i className='fas fa-sun'></i>
