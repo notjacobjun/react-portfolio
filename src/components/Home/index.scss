@@ -111,3 +111,23 @@
     height: 505px;
     animation: fadeIn 4s;
 }
+
+.blob {
+    height: auto;
+    width: auto;
+    position: absolute;
+    background: transparent;
+    animation: fadeIn 4s;
+}
+
+#blob1 {
+    right: -15%;
+    left: 40%;
+    top: -20%;
+}
+
+#blob2 {
+    right: -10%;
+    left: 40%;
+    top: 15%;
+}
